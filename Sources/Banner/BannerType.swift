@@ -10,7 +10,7 @@ import SwiftUI
 @available(iOS 13.0, *)
 @available(macOS 10.15, *)
 public enum BannerType {
-  public case normal(message: String)
+  case normal(message: String)
   
   public var backgroundColor: Color {
     switch self {
