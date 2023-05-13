@@ -8,16 +8,16 @@
 import SwiftUI
 
 @available(macOS 10.15, *)
-enum BannerType {
-  case normal(message: String)
+public enum BannerType {
+  public case normal(message: String)
   
-  var backgroundColor: Color {
+  public var backgroundColor: Color {
     switch self {
       case .normal: return Color.gray
     }
   }
   
-  var message: String {
+  public var message: String {
     switch self {
       case let .normal(message):
         return message

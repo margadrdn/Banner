@@ -5,18 +5,17 @@ import SwiftUI
 @available(macOS 10.15, *)
 public class BannerService: ObservableObject {
   public static let shared = BannerService()
-//  private init() {}
-  public init() {}
+  private init() {}
   
-  @Published var banner: BannerType? = nil
+  @Published public var banner: BannerType? = nil
   
-  func showBanner(banner: BannerType) {
+  public func showBanner(banner: BannerType) {
     withAnimation {
       self.banner = banner
     }
   }
   
-  func hideBanner() {
+  public func hideBanner() {
     
   }
 }
