@@ -5,6 +5,7 @@ import SwiftUI
 public class BannerService: ObservableObject {
   public static let shared = BannerService()
 //  private init() {}
+  public init() {}
   
   @Published var banner: BannerType? = nil
   
