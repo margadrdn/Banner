@@ -18,13 +18,11 @@ public struct BannerView: View {
   }
   
   public var body: some View {
-    ZStack {
-      VStack {
-        Text(banner.message)
-          .background(banner.backgroundColor)
-        Spacer()
-      }
-      .padding()
+    VStack {
+      Text(banner.message)
+        .background(banner.backgroundColor)
+      Spacer()
     }
+    .padding()
   }
 }
