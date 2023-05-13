@@ -8,9 +8,9 @@
 import SwiftUI
 
 @available(macOS 10.15, *)
-struct BannerView: View {
+public struct BannerView: View {
   let banner: BannerType
-  var body: some View {
+  public var body: some View {
     ZStack {
       VStack {
         Text(banner.message)
