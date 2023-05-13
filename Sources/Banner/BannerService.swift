@@ -4,7 +4,7 @@ import SwiftUI
 @available(macOS 10.15, *)
 public class BannerService: ObservableObject {
   public static let shared = BannerService()
-  private init() {}
+//  private init() {}
   
   @Published var banner: BannerType? = nil
   
