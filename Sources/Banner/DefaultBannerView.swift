@@ -27,10 +27,7 @@ public struct DefaultBannerView: View {
       Spacer()
     }
     .frame(maxWidth: .infinity)
-    .padding()
     .background(Color.init(red: 0.25, green: 0.25, blue: 0.25))
-    .cornerRadius(8)
-    .padding()
   }
 }
 
