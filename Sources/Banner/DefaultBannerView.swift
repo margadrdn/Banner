@@ -28,6 +28,9 @@ public struct DefaultBannerView: View {
     }
     .frame(maxWidth: .infinity)
     .background(Color.init(red: 0.25, green: 0.25, blue: 0.25))
+    #if available
+    .ignoresSafeArea()
+    #endif
   }
 }
 
