@@ -22,7 +22,6 @@ public struct Banner<Content> : View where Content : View {
         .transition(AnyTransition.move(edge: .top))
       Spacer()
       Spacer()
-      Spacer()
     }
   }
 }
