@@ -19,7 +19,7 @@ public struct Banner<Content> : View where Content : View {
   public var body: some View {
     VStack {
       content
-        .transition(AnyTransition.move(edge: .top))
+        .transition(.move(edge: .top))
       Spacer()
     }
   }
