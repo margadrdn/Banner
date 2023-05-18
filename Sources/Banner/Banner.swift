@@ -23,6 +23,7 @@ public struct Banner<Content> : View where Content : View {
       Spacer()
       Spacer()
       Spacer()
+      Spacer()
     }
   }
 }
