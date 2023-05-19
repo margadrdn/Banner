@@ -44,7 +44,7 @@ public struct Banner<Content> : View where Content : View {
               }
             }
             .onEnded { _ in
-              if abs(heightOffset) > 20 {
+              if abs(heightOffset) > 25 {
                 bannerService.hideBanner()
               } else {
                 withAnimation {
