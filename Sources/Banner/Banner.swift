@@ -23,6 +23,9 @@ public struct Banner<Content> : View where Content : View {
   
   private let edge: BannerEdge
   
+  
+  
+  
   private var heightOffset: CGFloat {
     switch edge {
       case .top: return min(dragOffset.height, 0)
