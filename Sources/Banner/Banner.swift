@@ -8,11 +8,22 @@
 import SwiftUI
 
 /// A view that displays its subview like a local notification.
+///
+/// The following example shows a simple banner using 'DefaultBannerView'
+///
+///     Banner {
+///       DefaultBannerView(.normal(message: "Hello"))
+///     }
+///     
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct Banner<Content> : View where Content : View {
   
   private let content: Content
   
+  /// Creates an instance with given
+  /// - Parameters:
+  ///   - edge: edge description
+  ///   - content: content description
   public init(edge: BannerEdge = .top, @ViewBuilder content: () -> Content) {
     self.content = content()
     self.edge = edge
