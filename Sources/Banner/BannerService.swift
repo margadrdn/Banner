@@ -7,7 +7,7 @@ public class BannerService: ObservableObject {
   public static let shared = BannerService()
   private init() {}
   
-  @Published public var banner: BannerType? = nil
+  @Published public private(set) var banner: BannerType? = nil
   
   public func showBanner(banner: BannerType) {
     withAnimation {
