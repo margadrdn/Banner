@@ -1,3 +1,10 @@
+//
+//  BannerService.swift
+//
+//
+//  Created by margadrdn on 2023.05.14.
+//
+
 import Foundation
 import SwiftUI
 

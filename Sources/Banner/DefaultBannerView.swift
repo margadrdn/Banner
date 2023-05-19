@@ -1,8 +1,8 @@
 //
-//  SwiftUIView.swift
+//  DefaultBannerView.swift
 //  
 //
-//  Created by MacBook Air on 2023.05.14.
+//  Created by margadrdn on 2023.05.14.
 //
 
 import SwiftUI

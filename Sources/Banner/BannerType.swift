@@ -2,7 +2,7 @@
 //  BannerType.swift
 //  
 //
-//  Created by Margad on 2023.05.14.
+//  Created by margadrdn on 2023.05.14.
 //
 
 import SwiftUI
