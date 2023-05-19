@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A simple banner view that can be used to display error or many other things.
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct DefaultBannerView: View {
   
