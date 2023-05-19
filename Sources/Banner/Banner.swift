@@ -22,10 +22,7 @@ public struct Banner<Content> : View where Content : View {
   @EnvironmentObject private var bannerService: BannerService
   
   private let edge: BannerEdge
-  
-  
-  
-  
+  private let name = "margad"
   private var heightOffset: CGFloat {
     switch edge {
       case .top: return min(dragOffset.height, 0)
