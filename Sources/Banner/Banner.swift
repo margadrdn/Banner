@@ -88,6 +88,7 @@ public struct Banner<Content> : View where Content : View {
         }
       }
     }
+    .zIndex(1)
   }
   
   public enum BannerEdge {
