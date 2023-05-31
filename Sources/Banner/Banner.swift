@@ -79,6 +79,15 @@ public struct Banner<Content> : View where Content : View {
       }
     }
     .transition(.move(edge: edge == .top ? .top : .bottom))
+    .onAppear {
+      guard let banner = bannerService.banner else { return }
+      
+      if !banner.isPersistent {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+          bannerService.hideBanner()
+        }
+      }
+    }
   }
   
   public enum BannerEdge {
@@ -90,9 +99,11 @@ public struct Banner<Content> : View where Content : View {
 
 @available(iOS 13.0, macOS 11, tvOS 13.0, watchOS 6.0, *)
 struct Banner_Previews: PreviewProvider {
+  static let bannerService = BannerService.shared
   static var previews: some View {
     Banner {
       DefaultBannerView(.normal(message: "This is a very long banner text. If fact this text is three lines long on the iPhone SE."))
     }
+    .environmentObject(bannerService)
   }
 }
