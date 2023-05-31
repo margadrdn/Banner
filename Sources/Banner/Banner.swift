@@ -24,7 +24,7 @@ import SwiftUI
 ///       CustomBannerView()
 ///     }
 ///
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 13.0, macOS 11, tvOS 13.0, watchOS 6.0, *)
 public struct Banner<Content> : View where Content : View {
   
   private let content: Content
@@ -88,11 +88,11 @@ public struct Banner<Content> : View where Content : View {
 }
 
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 13.0, macOS 11, tvOS 13.0, watchOS 6.0, *)
 struct Banner_Previews: PreviewProvider {
   static var previews: some View {
     Banner {
-      DefaultBannerView(.normal(message: "Hellooo"))
+      DefaultBannerView(.normal(message: "This is a very long banner text. If fact this text is three lines long on the iPhone SE."))
     }
   }
 }

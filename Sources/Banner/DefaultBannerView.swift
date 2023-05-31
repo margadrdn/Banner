@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// A simple banner view that can be used to display error or many other things.
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 13.0, macOS 11, tvOS 13.0, watchOS 6.0, *)
 public struct DefaultBannerView: View {
   
   let banner: BannerType
@@ -35,7 +35,7 @@ public struct DefaultBannerView: View {
   }
 }
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 13.0, macOS 11, tvOS 13.0, watchOS 6.0, *)
 struct DefaultBannerView_Previews: PreviewProvider {
   static var previews: some View {
     DefaultBannerView(.normal(message: "Banner message"))
