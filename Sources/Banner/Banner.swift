@@ -84,7 +84,7 @@ public struct Banner<Content> : View where Content : View {
       guard let banner = bannerService.banner else { return }
       
       if !banner.isPersistent {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
           bannerService.hideBanner()
         }
       }
