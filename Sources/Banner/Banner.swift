@@ -78,6 +78,7 @@ public struct Banner<Content> : View where Content : View {
         Spacer()
       }
     }
+    .zIndex(1)
     .transition(.move(edge: edge == .top ? .top : .bottom))
     .onAppear {
       guard let banner = bannerService.banner else { return }
@@ -88,7 +89,6 @@ public struct Banner<Content> : View where Content : View {
         }
       }
     }
-    .zIndex(1)
   }
   
   public enum BannerEdge {
